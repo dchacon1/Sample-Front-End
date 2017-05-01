@@ -1,0 +1,241 @@
+
+/*Default css styles*/
+body {
+    background-color: #EBEBFA;
+    width: 90%;
+    margin: auto;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Styling the headings*/
+h1 {
+    font-size: 3.25em;
+    color: #FFF;
+    padding-bottom: 25%;
+    margin-left: 3%;
+    display: block;
+}
+
+h2, h3 {
+    color: #2A7DB5;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 5% 0;
+}
+
+p {
+    text-align: justify;
+}
+
+/*Desktop Navbar styles*/
+
+.main-nav ul li {
+    display: table-cell;
+    min-width: 33.3333334%;
+}
+
+.main-nav ul li:first-child {
+    border-right: 1px solid #2A7DB5;
+}
+
+.main-nav ul li:last-child {
+    border-left: 1px solid #2A7DB5;
+}
+
+.main-nav ul {
+    display: table;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(#EBEBFA, lightblue);
+}
+
+.main-nav a:active {
+    color: black;
+}
+
+.main-nav a {
+    color: black;
+}
+
+@media(min-width: 600px) {
+    .main-nav ul li:hover {
+        background: linear-gradient(lightblue, #EBEBFA);
+    }
+    .main-nav ul li:active {
+        background: linear-gradient(blue, #EBEBFA);
+    }
+}
+
+/*Styling main website containers*/
+.primary-container {
+    max-width: 100%;
+}
+
+.secondary-container {
+    background-color: #FFF;
+    float: left;
+    margin-top: 2%;
+}
+
+.primary-content {
+    margin: 2%;
+    max-width: 60%;
+    float: inherit;
+}
+
+.secondary-content {
+    margin: 2%;
+    max-width: 32%;
+    float: right;
+}
+
+.par2 {
+    padding-top: 4%;
+}
+/*Banner Styles*/
+.banner-image {
+    clear: right;
+    position: relative;
+    background: url('../images/lighthouse.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.menu img {
+    display: none;
+}
+/*Desktop images styles*/
+.image {
+    max-width: 50%;
+    padding-bottom: 2%;
+}
+
+.goat {
+    float: left;
+    padding-right: 4%;
+}
+
+.dogs {
+    float: right;
+    padding-left: 4%;
+}
+
+/*Social networking styles*/
+.social {
+    max-width: 137px;
+}
+
+.social a {
+    width: 32px;
+    height: 32px;
+}
+
+.social img {
+    padding: 3px;
+}
+
+/*Styling the footer*/
+footer {
+    clear: left;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    font-size: .75em;
+    border-right: 1px solid;
+    padding-right: 5px;
+    margin: 5px 0;
+}
+
+footer ul li:last-child {
+    border-right: none;
+}
+
+/*Mobile Stying begins here*/
+@media (max-width: 600px) {
+    .banner-image {
+        width: 100%;
+        float: left;
+    }
+    .menu img {
+        display: block;
+        float: right;
+        width: 35px;
+        margin-top: 8px;
+        margin-right: 5%;
+    }
+    .main-nav {
+        display: none;
+    }
+    .toggle-nav {
+        display: block;
+    }
+    .main-nav ul li {
+        display: block;
+        border-left: 1px solid #2A7DB5;
+        border-right: 1px solid #2A7DB5;
+        border-bottom: 1px solid #2A7DB5;
+        text-align: center;
+    }
+    .main-nav ul li:active {
+        background: linear-gradient(blue, #EBEBFA);
+    }
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    h1 {
+        max-width: 70%;
+        float: left;
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.5em;
+        padding: 5% 0;
+    }
+    .image {
+        max-width: 100%;
+    }
+    .secondary-container {
+        background-color: #FFF;
+    }
+    .primary-content {
+        float: inherit;
+        max-width: 100%;
+    }
+    .secondary-content {
+        float: none;
+        max-width: 100%;
+    }
+    .goat {
+        padding: 0;
+    }
+    .dogs {
+        padding-left: 0;
+        padding-top: 8%;
+    }
+    .image {
+        padding-bottom: 8%;
+    }
+    footer ul li {
+        font-size: .65em;
+    }
+}

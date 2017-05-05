@@ -114,6 +114,9 @@ nav ul {
     margin: 0 3%;
     width: 94%;
 }
+.mobile-boundry-style p{
+  line-height: 1.2rem;
+}
 
 .primary-content p {
     clear: left;
@@ -259,10 +262,13 @@ footer ul li:last-child {
     .mobile-boundry-style {
         margin: 0;
     }
+    .mobile-boundry-style p{
+      line-height: normal;
+    }
     .primary-content {
         margin-left: 5%;
         padding-bottom: 4%;
-        max-width: 55%;
+        max-width: 53%;
         float: left;
     }
     .img-container {
